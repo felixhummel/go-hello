@@ -11,6 +11,10 @@ env | grep ^PATH
 ```
 ... paste.
 
+## gofmt
+Settings > Go > Imports: check everything \o/
+
 
 # Packages are weird
 - how to multi binaries: https://stackoverflow.com/a/37681238
+
