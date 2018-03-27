@@ -1,11 +1,12 @@
 package main
 
 import (
+	"fmt"
 	"log"
+	"net/url"
 	"reflect"
 
 	"gopkg.in/alecthomas/kingpin.v2"
-	"net/url"
 )
 
 var (
@@ -21,5 +22,5 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Println(reflect.ValueOf(*u).FieldByName(*FIELD))
+	fmt.Println(reflect.ValueOf(*u).FieldByName(*FIELD))
 }
